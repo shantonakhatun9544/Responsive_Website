@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   font-size: 45px;
-  line-height: 64;
+  line-height: 64px;
   color: #222;
 }
 
@@ -45,7 +45,18 @@ p {
 .section-m1 {
   margin: 40px 0;
 }
-
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: rgb(224, 197, 197);
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
 body {
   width: 100%;
 }
@@ -224,8 +235,15 @@ body {
   width: 100%;
   position: relative;
 }
+#product1 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
 
-#product1 .pro {
+}
+
+#product1 .pro{
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
@@ -234,38 +252,37 @@ body {
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
+  position: relative;
 }
-
-#product1 .pro img {
+#product .pro :hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
   width: 100%;
   border-radius: 20px;
 }
 
-#product .pro :hover {
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-}
-
-#product1 .pro .des {
+#product1 .pro .des{
   text-align: start;
   padding: 10px 0;
 }
 
-#product1 .pro .des span {
+#product1 .pro .des span{
   color: #060606;
   font-size: 12px;
 }
-
-#product1 .pro .des h5 {
+/* p */
+#product1 .pro .des h5{
   padding-top: 7px;
   color: #1a1a1a;
   font-size: 14px;
 }
 
-#product1 .pro.des i {
+#product1 .pro.des i{
   font-size: 12px;
   color: rgb(243, 181, 25);
 }
-#product1 .pro.des h4 {
+#product1 .pro.des h4{
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
@@ -274,3 +291,46 @@ body {
 /*  .section-p1 {
     padding: 40% 80%; 
 } */
+#product1 .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color:#088178;
+  border: 1px solid #e8f6ea;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+/* p end */
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("img/bac-image.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+
+}
+#banner h4{
+  color: #2c1804;
+  font-size: 16px;
+}
+#banner h2{
+  color:rgba(118, 118, 8, 0.941);
+  font-size: 30px;
+  padding: 10px 0;
+}
+#banner h2 span{
+  color: rgba(139, 52, 15, 0.941);
+}
+#banner button:hover{
+  color: #fff;
+}
