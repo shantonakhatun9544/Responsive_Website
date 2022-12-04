@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css"/> 
     
 </head>
@@ -20,19 +27,28 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
-            </u1>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+              </u1>
         </div>
+        <div id="mobile">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <i
+            id="bar"
+            class="fas fa-outdent"
+          ></i>
+        </div>
+        
     </section>
-    <section id="hero">
+     <section id="hero">
         <h4>In Offer</h4>
         <h1>Best value deals</h1>
         <h>All products</h>
-        <p>Save more with coupons & up to 70% OFF!</p>
+        <p>Save more with coupons & up to <span>70% OFF!</span></p>
         <button>Shop now</button>
     
     </section>
-    <!-- 2nd section start -->
+    <!-- <! 2nd section start -->
     <section id="feature" class="section-p1">
       <!-- 1 -->
         <div class="fe-box">
@@ -56,7 +72,7 @@
       <img src="img/24 by 7.jpg" alt="">
        <h6>24/7 Support</h6>
     </div>
-<!-- 5 -->
+    <!-- 5 -->
     <div class="fe-box">
       <img src="img/promotion.jpg" alt="">
       <h6>Promotions</h6>
@@ -74,7 +90,6 @@
     <section id="product1" class="section-p1">
       <h2>Feature Products</h2>
       <p>Winter Collection New Mordern Design</p>
-      <!-- start 1 -->
       <div class="pro-container">
         <!-- 2 -->
         <div class="pro">
@@ -93,7 +108,7 @@
             <h4>$35</h4>
             <!-- 4 -->
           </div>
-          <a href="#"><i class="fal fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <!-- 3 -->
         </div>
         <div class="pro">
@@ -115,7 +130,7 @@
             <h4>$18</h4>
             <!-- 4 -->
           </div>
-          <a href="#"><i class="fal fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <!-- 3 -->
         </div>
 
@@ -138,7 +153,7 @@
             <h4>$20</h4>
             <!-- 4 -->
           </div>
-          <a href="#"><i class="fal fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <!-- 3 -->
         </div>
 
@@ -161,7 +176,7 @@
             <h4>$25</h4>
             <!-- 4 -->
           </div>
-          <a href="#"><i class="fal fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <!-- 3 -->
         </div>
 
@@ -184,7 +199,7 @@
             <h4>$10</h4>
             <!-- 4 -->
           </div>
-          <a href="#"><i class="fal fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <!-- 3 -->
         </div>
 
@@ -207,7 +222,7 @@
             <h4>$50</h4>
             <!-- 4 -->
           </div>
-          <a href="#"><i class="fal fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <!-- 3 -->
         </div>
 
@@ -231,7 +246,7 @@
             <h4>$100</h4>
             <!-- 4 -->
           </div>
-          <a href="#"><i class="fal fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <!-- 3 -->
           </div>
           <div class="pro">
@@ -253,7 +268,7 @@
               <h4>$45</h4>
               <!-- 4 -->
             </div>
-            <a href="#"><i class="fal fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             <!-- 3 -->
           </div>
 <!-- 2 -->
@@ -261,12 +276,295 @@
 <!-- end 1 -->
     </section>
 <!-- new section -->
-     <section id="banner" class=".section-m1">
+     <section id="banner" class="section-m1">
       <h4>Repair Services</h4>
       <h2>Up to <span>70% Off</span> All Clothes & Accessories</h2>
       <button class="normal">Explore More</button>
      </section>
-   
-    <script src="script.js"></script>
+   <!-- new arrivals -->
+   <section
+    id="product1"
+    class="section-p1">
+    <h2>New Arrivals</h2>
+    <p>Winter Collection New Mordern Design</p>
+    
+    <div class="pro-container">
+      <!-- 2 -->
+      <div class="pro">
+        <img
+          src="img/new1.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$35</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+      <div class="pro">
+        <img
+          src="img/new2.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$18</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+  
+      <div class="pro">
+        <img
+          src="img/new3.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$20</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+  
+      <div class="pro">
+        <img
+          src="img/new4.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$25</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+  
+      <div class="pro">
+        <img
+          src="img/new5.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$10</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+  
+      <div class="pro">
+        <img
+          src="img/new6.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$50</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+  
+      <div class="pro">
+        <img
+          src="img/new7.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+  
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$100</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+      <div class="pro">
+        <img
+          src="img/new8.jpeg"
+          alt=""
+        >
+        <!-- 3 -->
+        <div class="des">
+          <span>adidas</span>
+          <h5>Warm Clothes</h5>
+          <!-- 4 -->
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>$45</h4>
+          <!-- 4 -->
+        </div>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <!-- 3 -->
+      </div>
+      <!-- 2 -->
+    </div>
+    <!-- end 1 -->
+  </section>  -->
+  <section id="sm-banner" class="section-p1">
+    <div class="banner-box">
+      <h4>crazy deals</h4>
+      <h2>bye 1 get 1 free</h2>
+      <span>The best classic dress  is on sale</span>
+      <button class="red">Learn More</button>
+    </div>
+    <div class="banner-box banner-box2">
+      <h4>summer</h4>
+      <h2>upcomming season</h2>
+      <span>The best classic dress is on sale</span>
+      <button class="red">Collection</button>
+    </div>
+  </section>
+  <section id="banner3">
+    
+    <div class="banner-box">
+      <h2>SEASONAL SALE</h2>
+      <h3>Winter Collection -50% OFF</h3>
+    </div>
+    <div class="banner-box banner-box2">
+      <h2>NEW COLLECTION</h2>
+      <h3>Winter Collection 2022</h3>
+    </div>
+    <div class="banner-box banner-box3">
+      <h2>T-SHIRTS</h2>
+      <h3>New Tready</h3>
+    </div>
+
+  </section> -->
+  <section id="newsletter">
+      <div class="newsletter" class="section-p1 section-m1">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button>Sign Up</button>
+      </div>
+  </section>
+   <footer class="section-p1"> 
+    <div class="col">
+      <img class="logo" src="img/logo1.png" alt="">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 1205 kathalbagan, Dhaka</p>
+      <p><strong>Phone:</strong> +8801766090449</p>
+      <p><strong>Hours:</strong> 10:00 - 18:00, sun - thurs</p>
+       <div class="follow">
+        <h4>Follow us</h4>
+         <ul><i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-skype"></i>
+        </ul>
+        </div>
+       </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Delivary Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="img/appstore.png" alt="">
+        <img src="img/googleplay.png" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/payicon.png" alt="">
+    </div>
+    <div class="copyright">
+      <p> 2022,Shantonas_Creation Responsive-Website.</p>
+    </div>
+  </footer> 
+   <script src="script.js"></script>
 </body>
 </html>
